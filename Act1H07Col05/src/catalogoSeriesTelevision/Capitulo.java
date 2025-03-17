@@ -11,6 +11,7 @@ package catalogoSeriesTelevision;
 public class Capitulo implements Comparable<Capitulo> {
 
     /*ATRIBUTOS*/
+    private String nombre;
     private int numTemporada;
     private int numCapitulo;
     private String descripcion;
@@ -23,6 +24,10 @@ public class Capitulo implements Comparable<Capitulo> {
     }
 
     /*GET*/
+    public String getNombre() {
+        return nombre;
+    }
+
     public int getNumTemporada() {
         return numTemporada;
     }
@@ -36,6 +41,10 @@ public class Capitulo implements Comparable<Capitulo> {
     }
 
     /*SET*/
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public void setNumTemporada(int numTemporada) {
         this.numTemporada = numTemporada;
     }
